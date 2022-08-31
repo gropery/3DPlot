@@ -44,7 +44,7 @@ for phi in np.linspace(0, 180. / np.pi, 100):
     # Plot the new wireframe and pause briefly before continuing.
     Z = generate(X, Y, phi)
     wframe = ax.plot_wireframe(X, Y, Z, rstride=2, cstride=2)
-    plt.pause(.001)
+    plt.pause(.01)
 
 print('Average FPS: %f' % (100 / (time.time() - tstart)))
 
